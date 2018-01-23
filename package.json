@@ -1,0 +1,27 @@
+{
+  "name": "lerna-dependency-checker",
+  "version": "1.0.0",
+  "description": "Checks your lerna dependencies like a pro",
+  "main": "index.js",
+  "bin": {
+    "lerna-dependency-checker": "./bin/cli.js"
+  },
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "commitlint": {
+    "extends": [
+      "./node_modules/@commitlint/config-conventional"
+    ]
+  },
+  "keywords": [
+    "lerna"
+  ],
+  "author": "Luismahou",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "6.0.2",
+    "@commitlint/config-conventional": "6.0.2",
+    "husky": "0.14.3"
+  }
+}
