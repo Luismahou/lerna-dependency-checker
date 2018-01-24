@@ -58,7 +58,7 @@ function reportProblems(pkgName, baseDeps, deps) {
         console.log(
           `Dependency ${problem.dependency} requires version ${
             baseDeps[problem.dependency]
-          } instead of ${deps[problems.dependency]}`,
+          } instead of ${deps[problem.dependency]}`,
         );
       }
     });
