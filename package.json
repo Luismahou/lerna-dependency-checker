@@ -1,19 +1,25 @@
 {
   "name": "lerna-dependency-checker",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Checks your lerna dependencies like a pro",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luismahou/lerna-dependency-checker.git"
+  },
   "bin": {
     "lerna-dependency-checker": "./bin/cli.js"
   },
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "semantic-release": "semantic-release"
   },
   "commitlint": {
     "extends": [
       "./node_modules/@commitlint/config-conventional"
     ]
   },
+  "release": {},
   "keywords": [
     "lerna"
   ],
@@ -22,6 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "6.0.2",
     "@commitlint/config-conventional": "6.0.2",
-    "husky": "0.14.3"
+    "husky": "0.14.3",
+    "semantic-release": "^12.2.4"
   }
 }
